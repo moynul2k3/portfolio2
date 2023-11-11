@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+}
+
+.header {
+    @apply h-screen md:h-16 md:w-full w-12 flex justify-center items-center left-0 top-0 fixed z-50
+}
+
+.navbar_style {
+    @apply w-10 flex flex-col gap-0 font-bold rounded-xl justify-center items-center bg-nav_bg overflow-hidden md:flex-row md:w-screen md:bg-transparent md:gap-5
+}
+
+.side_nav {
+    @apply px-2 py-5 rounded-xl hover:bg-red-950 md:hidden 
+}
+
+.top_nav {
+    @apply hover:text-red-700 hidden md:block 
+}
+
+
+/* ...........home........... */
+.bg_blur_effect {
+    @apply absolute w-96 h-96 top-20 -left-32 rounded-full filter blur-xl opacity-60 md:hidden
+}
+
+.hero_btn {
+    @apply flex justify-center items-center lg:justify-start gap-5 w-full mt-5 text-lg font-semibold
+}
+
+.btn {
+    @apply text-white w-40 md:w-60 py-3 shadow-inner shadow-slate-500 rounded-lg hover:shadow-red-600 bg-gradient-to-t hover:from-slate-700 from-red-900 to-transparent active:bg-lime-900
+}
+
+
+.hero_text {
+    @apply absolute h-72 w-screen bottom-0 rounded-tr-full md:rounded-box5 border-t-2 border-white bg-body_bg lg:hidden
+}
+
+.hero_md {
+    @apply w-screen h-full pt-24 absolute flex justify-center items-start
+}
+
+.hero_text_lg { 
+    @apply absolute w-screen h-36 rounded-box5 bottom-0 z-0
+}
+
+.lg_box_img {
+    @apply rounded-lg_box1 flex justify-center items-center
+}
+
+
+.pages{
+    @apply pt-16 w-full  bg-body_bg lg:bg-transparent px-20 md:px-36 overflow-hidden
+}
+
+.section_title{
+    @apply text-3xl py-3 border-b-2 border-red-600
+}
